@@ -1,0 +1,245 @@
+.main{
+    border: 2px solid rgb(47, 228, 23);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper{
+    
+    width: 130px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.head{
+    background-color: rgb(47, 228, 23);
+    width: 130px;
+    height: 105px;
+    border-radius: 70px 70px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+.lefteyes{
+    width: 10px;
+    height: 10px;
+    margin: 15px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.righteyes{
+    width: 10px;
+    height: 10px;
+    margin: 15px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.middle{
+    
+    width: 250px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.lefthand{
+    
+    background-color: rgb(47, 228, 23);
+    width: 30px;
+    height: 90px;
+    border-radius: 30px;
+}
+
+.stomach{
+    
+    background-color:rgb(47, 228, 23);
+    width: 130px;
+    margin: 0 10px;
+    border-radius: 0 0 50px 50px;
+}
+
+.righthand{
+    
+    background-color: rgb(47, 228, 23);
+    width: 30px;
+    height: 90px;
+    border-radius: 30px;
+}
+
+.lower{
+    
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.leftleg, .rightleg{
+    
+    margin: 0 10px;
+    width: 20px;
+    border-radius: 30px;
+    background-color:rgb(47, 228, 23);
+}
+.main:hover .stomach{
+    animation: stomach 1s infinite;
+}   
+    
+        width: 20px
+        height: 80px;
+        
+    }
+    .rightleg {
+        animation-delay: 0.3s;
+    }
+
+@keyframes stomach{
+    0%{
+        width: 130px;
+        transform: rotate(100deg);
+    }
+    50%{
+        width: 150px;
+        transform: rotate(-250deg);
+    }
+    100%{
+        width: 130px;
+        transform: rotate(100deg);
+    }
+}
+
+.main:hover .head{
+    animation: head 1s infinite;
+}
+@keyframes head{
+    0% {
+        transform: rotate(0deg) ;
+    }
+    10% {
+        transform: rotate(-15deg) ;
+    }
+    20% {
+        transform: rotate(15deg) ;
+    }
+    30% {
+        transform: rotate(-15deg);
+    }
+    40% {
+        transform: rotate(15deg) ;
+    }
+    50% {
+        transform: rotate(-15deg) ;
+    }
+    60% {
+        transform: rotate(15deg);
+    }
+    70% {
+        transform: rotate(-15deg);
+    }
+    80% {
+        transform: rotate(15deg);
+    }
+    90% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+.main:hover .lefthand {
+    animation: shakehand 1s infinite;
+}
+
+@keyframes shakehand {
+    0% {
+         transform: rotate(20deg); 
+    }
+    20% {
+        transform: rotate(20deg);
+    }
+    40% {
+         transform: rotate(20deg);
+    }
+    60% {
+         transform: rotate(20deg);
+    }
+    80% {
+         transform: rotate(20deg);
+    }
+    100% {
+         transform: rotate(20deg);
+    }
+}
+.main:hover .righthand {
+    animation: shakehand 0.5s infinite;
+}
+
+@keyframes shakehand {
+    0% {
+         transform: rotate(-100deg); 
+        }
+    50%{
+        transform: rotate(250deg);
+    }
+    100% {
+         transform: rotate(-100deg);
+         }
+}
+.main:hover .leftleg {
+    animation: shakehand 0.5s infinite;
+}
+
+@keyframes shakeleg {
+    0% {
+         transform: rotate(0deg); 
+    }
+    20% {
+        transform: rotate(-20deg);
+    }
+    40% {
+         transform: rotate(20deg);
+    }
+    60% {
+         transform: rotate(-20deg);
+    }
+    80% {
+         transform: rotate(20deg);
+    }
+    100% {
+         transform: rotate(0deg);
+    }
+}
+.main:hover .rightleg {
+    animation: shakehand 0.5s infinite;
+}
+
+@keyframes shakeleg {
+    0% {
+         transform: rotate(0deg); 
+    }
+    20% {
+        transform: rotate(-20deg);
+    }
+    40% {
+         transform: rotate(20deg);
+    }
+    60% {
+         transform: rotate(-20deg);
+    }
+    80% {
+         transform: rotate(20deg);
+    }
+    100% {
+         transform: rotate(0deg);
+    }
+}
